@@ -38,6 +38,6 @@ def workdir_view(request):
     dir_list = os.listdir(path)
     str_dir = ''
     for i in dir_list:
-        str_dir += i+'\n'
+        str_dir += i + '<br/>'
     return HttpResponse(str_dir)
     #raise NotImplemented
